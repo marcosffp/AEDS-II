@@ -4,9 +4,20 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int op;
 
+        System.out.println(NumerosDivisiveis.numeroDivisivel(10));
+        System.out.println(PalavraPalindromo.isPalindromo(new char[] { 'O', 'V', 'O' }));
+        System.out.println(NumVogais.numVogais(new char[] { 'O', 'V', 'O' }));
+        System.out.println(Recursivo.numRecursivo("OVO12@"));
+        int[] vetor = { 5, 4, 3, 2, 1 };
+        vetor = Ordenacao.ordenar(vetor);
+        for (int i : vetor) {
+            System.out.print(i+" ");
+        }
+        
+        /*     Scanner scanner = new Scanner(System.in);
+        int op;
+        
         do {
             System.out.println("Escolha um algoritmo: ");
             System.out.println("1 - PrintRecursivo");
@@ -18,10 +29,10 @@ public class Main {
             System.out.println("7 - NumRepeticao");
             System.out.println("0 - Sair");
             System.out.print("Digite a opção desejada: ");
-
+        
             op = scanner.nextInt();
             scanner.nextLine();
-
+        
             switch (op) {
                 case 1:
                     PrintRecursivo.printRecursivo(2);
@@ -52,7 +63,8 @@ public class Main {
                     break;
             }
         } while (op != 0);
-
+        
         scanner.close();
+        }*/
     }
 }
